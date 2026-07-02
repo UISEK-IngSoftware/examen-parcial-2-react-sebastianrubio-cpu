@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import axios from 'axios';
-import { getCharacters } from '../src/services/futuramaService';
+import { getCharacters } from '../services/futuramaService.js';
 
 // Bloquea las llamadas Axios 
 vi.mock('axios', () => {
