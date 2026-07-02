@@ -9,19 +9,19 @@
 
 .character-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
 }
 
 .character-card-content {
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding: 24px !important;
-    flex: 1; /* Permite que la tarjeta ocupe todo el alto disponible en el grid */
+    gap: 32px;
+    padding: 32px !important;
+    flex: 1; 
 }
 
 .character-avatar {
-    width: 100px !important; /* Aumentado de 80px a 100px */
+    width: 100px !important; 
     height: 100px !important;
     border: 3px solid #f0f0f0;
 }
@@ -29,5 +29,5 @@
 .character-info {
     display: flex;
     flex-direction: column;
-    gap: 8px; /* Mayor separación entre las líneas de texto */
+    gap: 8px; 
 }

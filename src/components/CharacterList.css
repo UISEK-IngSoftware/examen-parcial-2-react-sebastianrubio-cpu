@@ -1,12 +1,12 @@
 .character-list {
     display: grid;
-    /* Forzamos máximo 5 columnas, con un tamaño mínimo de 240px por tarjeta */
-    grid-template-columns: repeat(5, minmax(260px, 1fr));
+    /* Mantiene las 5 columnas idénticas y expansibles */
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    width: 95%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 0;
+    width: 100%;
+    max-width: 85%; 
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -17,22 +17,24 @@
 }
 
 
+@media (max-width: 1400px) {
+    .character-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
-/* Tablet/Desktop pequeño: 3 columnas */
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     .character-list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Tablets: 2 columnas */
 @media (max-width: 800px) {
     .character-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Móviles: 1 columna */
 @media (max-width: 500px) {
     .character-list {
         grid-template-columns: 1fr;
